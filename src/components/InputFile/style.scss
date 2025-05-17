@@ -1,0 +1,21 @@
+.wrap-input {
+    .input {
+        display: flex;
+        padding: 20px;
+        gap: 10px;
+        font-size: 1rem;
+        color: $text-color;
+        .custom-button {
+            background-color: $secondary-background-color;
+            padding: 10px;
+            border: 1px solid $text-color;
+        }
+        .file-name {
+            padding: 10px;
+            border: 1px dashed $text-color;
+        }
+        .hidden-input {
+            display: none;
+        }
+    }
+}
