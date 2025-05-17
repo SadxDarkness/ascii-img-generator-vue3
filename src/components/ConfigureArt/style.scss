@@ -1,0 +1,23 @@
+.wrap-settings {
+    .settings {
+        @include flexbox(center, center, row, wrap, 20px);
+
+        ul {
+            display: flex;
+            gap: 10px;
+            li{
+                display: flex;
+                border: 1px dashed $text-color;
+                padding: 10px;
+                align-items: center;
+                label {
+                    padding-right: 10px;
+                }
+                input {
+                    max-width: 70px;
+                }
+            }
+        }
+    }
+
+}

@@ -4,7 +4,7 @@
       <base-header></base-header>
     </section>
 
-    <section>
+    <section class="input-n-settings">
       <input-file></input-file>
       <configure-art></configure-art>
     </section>

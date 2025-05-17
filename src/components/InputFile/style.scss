@@ -4,11 +4,13 @@
         padding: 20px;
         gap: 10px;
         font-size: 1rem;
-        color: $text-color;
         .custom-button {
             background-color: $secondary-background-color;
             padding: 10px;
-            border: 1px solid $text-color;
+            outline: 1px solid $text-color;
+            &:hover {
+                outline: 3px solid $text-color;
+            }
         }
         .file-name {
             padding: 10px;

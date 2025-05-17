@@ -1,4 +1,9 @@
 main {
     background-color: $background-color;
     font-family: 'Pixel', sans-serif;
+    color: $text-color;
+    .input-n-settings {
+        display: flex;
+        align-items: center;
+    }
 }
