@@ -6,4 +6,7 @@ main {
         display: flex;
         align-items: center;
     }
+    .show {
+        @include flexbox(center, center, wrap, row, 50px)
+    }
 }

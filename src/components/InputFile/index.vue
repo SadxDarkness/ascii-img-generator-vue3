@@ -27,9 +27,11 @@
 
 </template>
 <script setup>
+import { defineEmits } from 'vue'
 import setup from './script'
 
-const { fileInput, fileName, handleFileChange } = setup()
+const emit = defineEmits(['update'])
+const { fileInput, fileName, handleFileChange } = setup(emit)
 
 defineOptions({
     name: 'InputFile'

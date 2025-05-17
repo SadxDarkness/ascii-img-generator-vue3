@@ -5,12 +5,12 @@
     </section>
 
     <section class="input-n-settings">
-      <input-file></input-file>
+      <input-file @update="setImagePreview"></input-file>
       <configure-art></configure-art>
     </section>
 
-    <section>
-      <show-image></show-image>
+    <section class="show">
+      <show-image :image-src="image"></show-image>
       <show-art></show-art>
     </section>
 
@@ -21,6 +21,7 @@
   </main>
 </template>
 <script setup>
+import {ref} from 'vue'
 
 import BaseHeader from '@/components/BaseHeader'
 import GenerateArt from '@/components/GenerateArt'
@@ -29,8 +30,11 @@ import ShowArt from '@/components/ShowArt'
 import ShowImage from '@/components/ShowImage'
 import ConfigureArt from '@/components/ConfigureArt'
 
-
 defineOptions({ name: 'MainFile'})
+
+const image = ref(null)
+
+const setImagePreview = (src) => image.value = src
 
 </script>
 
