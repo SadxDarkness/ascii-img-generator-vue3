@@ -11,7 +11,7 @@
 
     <section class="show">
       <show-image :image-src="image"></show-image>
-      <show-art></show-art>
+      <show-art :image-src="image"></show-art>
     </section>
 
     <section>
