@@ -1,16 +1,38 @@
-import {ref} from 'vue'
+import {reactive, watch} from 'vue'
 
-export default () => {
-    const settingsTitle = {
-        width: 'Ширина:',
-        symbolSpace: 'Символ пробела:',
-        symbolDot: 'Символ точки:'
+export default (emit) => {
+    const settingsConfig = {
+        resolution: {
+            title: 'Разрешение',
+            type: 'number'
+        },
+        symbolSpace: {
+            title: 'Символ пробела',
+            type: 'text'
+        },
+        symbolDot: {
+            title: 'Символ точки',
+            type: 'text'
+        },
+        brightness : {
+            title: 'Яркость',
+            type: 'range',
+            min: '0',
+            max: '255'
+        }
     }
     
-    const settingsValue = ref({
-        width: '',
-        symbolSpace: '',
-        symbolDot: ''
+    const settingsValue = reactive({
+        resolution: 150,
+        symbolSpace: '#',
+        symbolDot: '.',
+        brightness: 150
     })
-    return {settingsTitle, settingsValue}
+    
+
+
+    watch(settingsValue, () => {emit('update', settingsValue)})
+
+
+    return {settingsConfig, settingsValue}
 }

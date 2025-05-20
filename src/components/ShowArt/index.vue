@@ -16,12 +16,15 @@ const props = defineProps({
   imageSrc: {
     type: String,
     default: null
+  },
+  settings: {
+    type: Object,
+    default: null
   }
 })
 defineOptions({
     name: 'ShowImage'
 })
-
 const { output } = setup(props)
 </script>
 <style lang="scss" scoped src="./style.scss"></style>

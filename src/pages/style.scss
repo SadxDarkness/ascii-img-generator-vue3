@@ -7,6 +7,6 @@ main {
         align-items: center;
     }
     .show {
-        @include flexbox(center, center, wrap, row, 50px)
+        @include flexbox(center, center, nowrap, row, 50px)
     }
 }
