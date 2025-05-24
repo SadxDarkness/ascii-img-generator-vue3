@@ -1,5 +1,4 @@
 main {
-    background-color: $background-color;
     font-family: 'Pixel', sans-serif;
     color: $text-color;
     .input-n-settings {
@@ -7,6 +6,6 @@ main {
         align-items: center;
     }
     .show {
-        @include flexbox(center, center, nowrap, row, 50px)
+        @include flexbox(center, center, wrap, row, 100px)
     }
 }

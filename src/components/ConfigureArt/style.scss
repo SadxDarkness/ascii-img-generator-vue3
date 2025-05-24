@@ -1,6 +1,6 @@
 .wrap-settings {
     .settings {
-        @include flexbox(center, center, row, wrap, 20px);
+        @include flexbox(center, center, row, nowrap, 20px);
 
         ul {
             display: flex;

@@ -4,6 +4,11 @@
 	border: none;
 }
 
+html, body {
+  height: 100%;
+  background-color: #333333;
+}
+
 *,
 *::before,
 *::after {
@@ -30,15 +35,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 ul, ul li {
 	list-style: none;
-}
-
-img {
-	vertical-align: top;
-}
-
-img, svg {
-	max-width: 100%;
-	height: auto;
 }
 
 address {

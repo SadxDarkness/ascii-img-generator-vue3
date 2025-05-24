@@ -10,24 +10,22 @@
     </section>
 
     <section class="show">
-      <show-image :image-src="image"></show-image>
       <show-art :image-src="image" :settings="settings"></show-art>
     </section>
 
     <section>
-      <generate-art></generate-art>
+      <save-art></save-art>
     </section>
 
   </main>
 </template>
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref } from 'vue'
 
 import BaseHeader from '@/components/BaseHeader'
-import GenerateArt from '@/components/GenerateArt'
+import SaveArt from '@/components/SaveArt'
 import InputFile from '@/components/InputFile'
 import ShowArt from '@/components/ShowArt'
-import ShowImage from '@/components/ShowImage'
 import ConfigureArt from '@/components/ConfigureArt'
 
 defineOptions({ name: 'MainFile'})
@@ -47,4 +45,5 @@ const setImageSettings = (newSettings) => settings.value = newSettings
 
 </script>
 
-<style lang="scss" scoped src="./style.scss"></style>
+<style lang="scss" scoped src="./style.scss">
+</style>

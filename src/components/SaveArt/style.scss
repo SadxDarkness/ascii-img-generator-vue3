@@ -1,0 +1,15 @@
+.save-buttons {
+    @include flexbox(center, flex-end, row, wrap, 20px);
+
+    padding: 20px 20px 20px 0;
+    
+    button {
+        padding: 10px;
+        outline: 1px solid $text-color;
+        background-color: $secondary-background-color;
+        
+        &:hover {
+                outline: 3px solid $text-color;
+            }
+    }
+}

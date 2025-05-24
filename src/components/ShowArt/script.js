@@ -1,5 +1,5 @@
 import { ref, computed, watchEffect, watch } from 'vue'
-export default (props) => {
+export default (props, sharedState) => {
   const output = ref(null)
 
   const settings = computed(() => ({
@@ -20,6 +20,10 @@ const convertToASCII = (img) => {
   
   canvas.width = settings.value.width
   canvas.height = settings.value.height
+
+    if (canvas.width <= 0 || canvas.height <= 0) {
+    return
+  }
 
   ctx.drawImage(img, 0, 0, settings.value.width, settings.value.height)
   const imageData = ctx.getImageData(0, 0, settings.value.width, settings.value.height).data
@@ -48,7 +52,7 @@ const convertToASCII = (img) => {
 
 // Наблюдатель за изменением изображения
 watchEffect(() => {
-  if (!props.imageSrc) return
+  if (!props.imageSrc || !props.settings.resolution) return
 
   const img = new Image()
   img.onload = () => {
@@ -60,13 +64,16 @@ watchEffect(() => {
   img.src = props.imageSrc
 })
 watch(settings, () => {
-  
+  if (!props.imageSrc || !props.settings.resolution) return
 
   const img = new Image()
   img.onload = () => {
     convertToASCII(img)
   }
   img.src = props.imageSrc
+})
+watchEffect(() => {
+  sharedState.asciiArt.value = output.value
 })
     return { output }
 }
