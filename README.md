@@ -1,5 +1,16 @@
-# Vue 3 + Vite
+"Там, где начинается код, рождается искусство"
+Мой первый самостоятельный веб-проект — генератор ASCII-артов. Вдохновлён историей вычислительной техники и минималистичной эстетикой 80-х.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Это небольшой инструмент, который превращает изображения в ASCII-арты прямо в браузере. Ничего сверхъестественного — просто мой первый шаг в мире фронтенда. Проект помог мне разобраться с Vue 3, реактивностью, обработкой изображений через Canvas и связью между компонентами через props и emits.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+HTML5 - Структура страницы
+SCSS - Стилизация интерфейса
+Vue 3 - Фреймворк для реактивности и компонентной архитектуры
+
+Как запустись?
+
+Клонируй репозиторий - "git clone https://github.com/your-username/ascii-art-generator.git"
+Установи зависимости - "npm install"
+Запусти проект - "npm run dev"
+
+Спасибо тебе за то, что заглянул сюда! Это мой первый шаг в большом пути освоения фронтенд-разработки.
