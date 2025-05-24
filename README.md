@@ -9,7 +9,7 @@ Vue 3 - Фреймворк для реактивности и компонент
 
 Как запустить?
 
-Клонируй репозиторий - "git clone https://github.com/your-username/ascii-art-generator.git" <br />
+Клонируй репозиторий - "git clone https://github.com/SadxDarkness/ascii-art-generator.git" <br />
 Установи зависимости - "npm install" <br />
 Запусти проект - "npm run dev" <br />
 
