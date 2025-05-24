@@ -20,14 +20,18 @@
         </div>
     </div>
 </template>
+
 <script setup>
+
 import { defineEmits } from 'vue'
 import setup from './script'
+
 const emit = defineEmits(['update'])
 const {settingsConfig, settingsValue} = setup(emit)
 defineOptions({
     name: 'ConfigureArt'
 })
+
 </script>
 
 <style lang="scss" scoped src="./style.scss"></style>

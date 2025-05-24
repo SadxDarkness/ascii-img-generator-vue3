@@ -13,10 +13,13 @@
         </span>
     </header>
 </template>
+
 <script setup>
+
 defineOptions({
     name: 'BaseHeader'
 })
+
 </script>
 
 <style lang="scss" scoped src="./style.scss"></style>

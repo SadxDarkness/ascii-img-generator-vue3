@@ -1,7 +1,6 @@
 <template>
     <div class="wrap-input">
         <div class="input">
-
             <button 
                 type="button"
                 class="custom-button"
@@ -21,12 +20,13 @@
                 ref="fileInput" 
                 @change="handleFileChange"
             />
-
         </div>
     </div>
 
 </template>
+
 <script setup>
+
 import { defineEmits } from 'vue'
 import setup from './script'
 
@@ -36,6 +36,7 @@ const { fileInput, fileName, handleFileChange } = setup(emit)
 defineOptions({
     name: 'InputFile'
 })
+
 </script>
 
 <style lang="scss" scoped src="./style.scss"></style>

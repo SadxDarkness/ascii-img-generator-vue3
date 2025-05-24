@@ -20,6 +20,7 @@
   </main>
 </template>
 <script setup>
+
 import { ref } from 'vue'
 
 import BaseHeader from '@/components/BaseHeader'
@@ -32,18 +33,15 @@ defineOptions({ name: 'MainFile'})
 
 const image = ref(null)
 
-const settings = ref(
-  {
+const settings = ref({
     resolution: 150,
     symbolSpace: '#',
     symbolDot: '.',
     brightness: 140
-  }
-)
+  })
 const setImagePreview = (src) => image.value = src
 const setImageSettings = (newSettings) => settings.value = newSettings
 
 </script>
 
-<style lang="scss" scoped src="./style.scss">
-</style>
+<style lang="scss" scoped src="./style.scss"></style>
